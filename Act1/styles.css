@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #5d8736;
+  --secondary-color: #809d3c;
+  --accent-color: #a9c46c;
+  --text-color: #f4ffc3;
+  --hover-color: #3E7B27;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+}
+
+#wrapper-div {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#logo-nav-div {
+  width: 110%;
+  min-height: 50px;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+  padding-left: -10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo-div {
+  min-height: 40px;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+.logoImg img {
+  width: 220px;
+  height: auto;
+}
+
+#nav-div {
+  position: absolute;
+  top: 40px;
+  right: 70px;
+  font-size: 20px;
+}
+
+
+#main-div {
+  margin-left: 240px;
+  padding: 20px;
+}
+
+form {
+  max-width: 500px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  padding: 60px 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 20px auto;
+  margin-left: 20%;
+  justify-content: center;
+}
+
+form h2 {
+  color: var(--text-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  letter-spacing: 0.1em;
+  margin-bottom: 30px;
+}
+
+.inputBox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkboxGroup input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  position: relative;
+  margin-left: -20px;
+  color: var(--accent-color);
+}
+
+.inputBox input[type="text"],
+.inputBox input[type="email"] {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #999;
+  outline: none;
+  color: var(--text-color);
+  font-size: 1em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.inputBox label {
+  position: absolute;
+  left: 0;
+  padding: 10px 0;
+  pointer-events: none;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.inputBox label span {
+  display: inline-block;
+  letter-spacing: 0.05em;
+  transition: 0.2s ease-in-out;
+}
+
+.inputBox input[type="text"]:focus ~ label span,
+.inputBox input[type="text"]:valid ~ label span,
+.inputBox input[type="email"]:focus ~ label span,
+.inputBox input[type="email"]:valid ~ label span {
+  color: var(--primary-color);
+  letter-spacing: 0.15em;
+  transform: translateY(-25px);
+}
+
+.inputBox input[type="text"]:focus,
+.inputBox input[type="text"]:valid,
+.inputBox input[type="email"]:focus,
+.inputBox input[type="email"]:valid {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.inputBox input[type="submit"] {
+  background: var(--primary-color);
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  color: var(--accent-color);
+  font-size: 1.15em;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+  background-color: var(--accent-color);
+
+}
+
+.logoImg img {
+  width: 40%;
+  height: auto;
+}
+  font-family: "Poppins";
+  font-size: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#wrapper-div {
+  width: 80%;
+  margin: auto;
+}
+
+* :not(:hover) {
+  transition: 0.5s;
+}
+
+.main {
+  margin-left: 140px;
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
