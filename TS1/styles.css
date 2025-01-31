@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+
+.resume-container {
+    width: 800px;
+    height: 1120px;
+    margin: 40px auto;
+    padding: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.profile-pic {
+    float: right;
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+h2 {
+    border-bottom: 2px solid black;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.skills {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.change-color-btn {
+    align: left;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.change-color-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.change-color-btn:hover {
+    background-color: #634832;;
+    transform: scale(1.1);
+}
+
+.resume-container.alt-mode {
+    background-color: #634832;
+    color: #dbc1ac;
+    border-color: black;
+}
